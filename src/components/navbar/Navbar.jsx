@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Sidebar from './sidebar'
+import Sidebar from './Sidebar'
 
 
 

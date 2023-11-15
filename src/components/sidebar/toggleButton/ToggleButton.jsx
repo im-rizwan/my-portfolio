@@ -1,15 +1,12 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
-const ToggleButton = ({setOpen}) => {
+const ToggleButton = ({ setOpen }) => {
   return (
-    <button className='w-[50px] h-[50px] rounded-full fixed top-6 border-none bg-transparent left-[25px] justify-center items-center flex pt-1'
-    onClick={()=>setOpen((prev)=>(!prev))}
-    >
-        <svg width="23" height="23" viewBox="0 0 23 23" >
+    <button onClick={() => setOpen((prev) => !prev)}>
+      <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
-          stroke="#FFFBF5"
+          stroke="black"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
@@ -18,7 +15,7 @@ const ToggleButton = ({setOpen}) => {
         />
         <motion.path
           strokeWidth="3"
-          stroke="#FFFBF5"
+          stroke="black"
           strokeLinecap="round"
           d="M 2 9.423 L 20 9.423"
           variants={{
@@ -28,7 +25,7 @@ const ToggleButton = ({setOpen}) => {
         />
         <motion.path
           strokeWidth="3"
-          stroke="#FFFBF5"
+          stroke="black"
           strokeLinecap="round"
           variants={{
             closed: { d: "M 2 16.346 L 20 16.346" },
@@ -37,7 +34,7 @@ const ToggleButton = ({setOpen}) => {
         />
       </svg>
     </button>
-  )
-}
+  );
+};
 
-export default ToggleButton
+export default ToggleButton;
